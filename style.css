@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg,pink 0%, rgb(255, 0, 255) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 2px solid white;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+}
+.container h1{
+    color:rgb(247, 228, 228);   
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.new-task-container{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+.new-task-container input{
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-container input:focus{
+    outline: none;
+    border-color: rgb(255, 0, 255);
+
+}
+
+.botaoadicionar{
+    flex:1;
+    border: none;
+    background-color: pink;
+    border-radius:5px ;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 12px;
+    height: 100%;
+    color: black;
+    cursor: pointer;
+}
+
+.tasks-container{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/*JS*/
+.erro{
+    border: 2px solid red !important;
+}
+.erro::placeholder{
+    color: red;
+}
+
+.item-tarefa{
+    display: flex;    
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: large  
+}
+
+.item-tarefa p {
+   margin-top: 12px;
+}
+
+.item-tarefa i{
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+    float:right;
+    margin-left: auto;
+}
+
+.form-check:checked{
+    background-color: pink;
+}
+.completed {
+    text-decoration: line-through;
+}
+
+.texto{
+    display: block;
+}
